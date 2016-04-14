@@ -1,13 +1,26 @@
 package com.example.smalljay1117.question_answer;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.view.View;
 
-public class Activity2 extends AppCompatActivity {
+public class Activity2 extends QuestionActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_2);
+    protected Class getNextActivityClass() {
+        return Activity3.class;
+    }
+
+    @Override
+    protected Class getBackActivityClass() {
+        return Activity1.class;
+    }
+
+    @Override
+    protected int getNextButtonVisibility() {
+        return QuestionActivity.VISIBLE;
+    }
+
+    @Override
+    protected int getBackButtonVisibility() {
+        return QuestionActivity.VISIBLE;
     }
 }

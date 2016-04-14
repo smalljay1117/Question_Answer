@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Question_Answer</string>
+
+    <string name="question_1">請問："\n"本門派誰最愛下麵給人吃？</string>
+    <string name="question_1_radio_a">艾蕾歐諾拉維爾塔利亞</string>
+    <string name="question_1_radio_b">Yeon誠</string>
+    <string name="question_1_radio_c">風騷洨兔仔</string>
+
+    <string name="question_2">請問："\n"哪位常說自己是正妹？(然後被狂吐槽)</string>
+
+    <string name="question_2_radio_a">放空妹</string>
+    <string name="question_2_radio_b">希薾菈薇妮絲</string>
+    <string name="question_2_radio_c">苁昕</string>
+
+    <string name="question_3">請問："\n"阿誠的口頭禪是？</string>
+
+    <string name="question_3_radio_a">重打重打</string>
+    <string name="question_3_radio_b">我就知道</string>
+    <string name="question_3_radio_c">拎搭ㄍㄟ啦</string>
+
+    <string name="question_4">請問："\n"暴走大聖又稱？</string>
+    <string name="question_4_radio_a">暴走聖</string>
+    <string name="question_4_radio_b">靖瓔璇</string>
+    <string name="question_4_radio_c">皮曦兒</string>
+
 </resources>
