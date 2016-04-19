@@ -1,7 +1,5 @@
 package com.example.smalljay1117.question_answer;
 
-import android.view.View;
-
 public class Activity3 extends QuestionActivity {
 
     @Override
@@ -12,6 +10,11 @@ public class Activity3 extends QuestionActivity {
     @Override
     protected Class getBackActivityClass() {
         return Activity2.class;
+    }
+
+    @Override
+    protected int getBackground() {
+        return R.drawable.activity_3_3;
     }
 
     @Override

@@ -1,22 +1,22 @@
 package com.example.smalljay1117.question_answer;
 
 public class Question {
-    private String question;
+    private String description;
     private String optionA;
     private String optionB;
     private String optionC;
     private int background;
 
-    public Question(String question, String optionA, String optionB, String optionC, int background) {
-        this.question = question;
+    public Question(String question, String optionA, String optionB, String optionC) {
+        this.description = question;
         this.optionA = optionA;
         this.optionB = optionB;
         this.optionC = optionC;
-        this.background = background;
+//        this.background = background;
     }
 
-    public String getQuestion() {
-        return question;
+    public String getDescription() {
+        return description;
     }
 
     public String getOptionA() {

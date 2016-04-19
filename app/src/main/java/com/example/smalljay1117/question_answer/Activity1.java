@@ -13,6 +13,11 @@ public class Activity1 extends QuestionActivity {
     }
 
     @Override
+    protected int getBackground() {
+        return R.drawable.activity_1_1;
+    }
+
+    @Override
     protected int getNextButtonVisibility() {
         return QuestionActivity.VISIBLE;
     }
@@ -21,4 +26,6 @@ public class Activity1 extends QuestionActivity {
     protected int getBackButtonVisibility() {
         return QuestionActivity.GONE;
     }
+
+
 }

@@ -11,6 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import com.example.smalljay1117.question_answer.model.UesrAnswers;
+
 public abstract class QuestionActivity extends AppCompatActivity {
 
     private TextView m_tv_no;
@@ -70,8 +72,11 @@ public abstract class QuestionActivity extends AppCompatActivity {
         m_radio_a.setText(sAdapter.getQuestionOptionsA(sQuestionIndex));
         m_radio_b.setText(sAdapter.getQuestionOptionsB(sQuestionIndex));
         m_radio_c.setText(sAdapter.getQuestionOptionsC(sQuestionIndex));
-        m_background.setBackgroundResource(sAdapter.getBackground(sQuestionIndex));
+//        m_background.setBackgroundResource(sAdapter.getBackground(sQuestionIndex));
+        setBackground();
     }
+
+
 
     private static int sLastQuestionIndex;
 
@@ -117,7 +122,27 @@ public abstract class QuestionActivity extends AppCompatActivity {
     }
 
     public void click(View view) {
+        RadioButton radio = (RadioButton)view;
+        UesrAnswers uesrAnswers = MyApp.getUesrAnswers();
+        switch (radio.getId()) {
+            case R.id.radio_a:
+                uesrAnswers.setAnswers(sQuestionIndex, 'A', radio.getText());
+                Log.d("QuestionActivity", "questionIndex=" + sLastQuestionIndex + "選了 A");
+                break;
+            case R.id.radio_b:
+                uesrAnswers.setAnswers(sQuestionIndex, 'B', radio.getText());
+                Log.d("QuestionActivity", "questionIndex=" + sLastQuestionIndex + "選了 B");
+                break;
+            case R.id.radio_c:
+                uesrAnswers.setAnswers(sQuestionIndex, 'C', radio.getText());
+                Log.d("QuestionActivity", "questionIndex=" + sLastQuestionIndex + "選了 C");
+                break;
+        }
+    }
 
+    public static void resetQuestionIndex() {
+        sQuestionIndex = 0;
+        sLastQuestionIndex = 0;
     }
 
     public void onBackPressed() {
@@ -127,6 +152,12 @@ public abstract class QuestionActivity extends AppCompatActivity {
     protected abstract Class getNextActivityClass();
 
     protected abstract Class getBackActivityClass();
+
+    protected abstract int getBackground();
+
+    private void setBackground() {
+        m_background.setBackgroundResource(getBackground());
+    }
 
     protected abstract
     @Visibility

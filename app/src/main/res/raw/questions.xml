@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <Exams>
+    <Exam>
+        <Question>請問："\n"本門派誰最愛下麵給人吃？</Question>
+        <OptionA>艾蕾歐諾拉維爾塔利亞</OptionA>
+        <OptionB>Yeon誠</OptionB>
+        <OptionC>風騷洨兔仔</OptionC>
+    </Exam>
+    <Exam>
+        <Question>請問："\n"哪位常說自己是正妹？(然後被狂吐槽)</Question>
+        <OptionA>放空妹</OptionA>
+        <OptionB>希薾菈薇妮絲</OptionB>
+        <OptionC>苁昕</OptionC>
+    </Exam>
+    <Exam>
+        <Question>請問："\n"阿誠的口頭禪是？</Question>
+        <OptionA>重打重打</OptionA>
+        <OptionB>我就知道</OptionB>
+        <OptionC>拎搭ㄍㄟ啦</OptionC>
+    </Exam>
+    <Exam>
+        <Question>請問："\n"暴走大聖又稱？</Question>
+        <OptionA>暴走聖</OptionA>
+        <OptionB>靖瓔璇</OptionB>
+        <OptionC>皮曦兒</OptionC>
+    </Exam>
+</Exams>
